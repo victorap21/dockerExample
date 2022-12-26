@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  web1:
+    image: victorap1821/test1:1.0
+    container_name: webSimple
+    hostname: web1
+    restart: always
+    ports:
+      - 8000:5200
+    stdin_open: true
+    tty: true
+  web2:
+    image: victorap1821/test1:1.0
+    container_name: webDev
+    hostname: web2
+    restart: always
+    ports:
+      - 8000:5500
+    stdin_open: true
+    tty: true
+
+  
